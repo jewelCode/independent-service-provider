@@ -1,9 +1,10 @@
 import './App.css';
-
+import Navigation from './components/Shared/Navigation/Navigation';
 function App() {
   return (
     <div>
-        <h1 className="text-primary text-center">Hello</h1>
+      <Navigation></Navigation>
+       
     </div>
   );
 }
