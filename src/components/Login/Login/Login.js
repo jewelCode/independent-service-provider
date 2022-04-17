@@ -1,7 +1,8 @@
 import React, { useRef } from 'react';
 import { Button, Form } from 'react-bootstrap';
-import { useSignInWithEmailAndPassword, useSignInWithGoogle } from 'react-firebase-hooks/auth';
+import { useSendPasswordResetEmail, useSignInWithEmailAndPassword, useSignInWithGoogle } from 'react-firebase-hooks/auth';
 import { Link, useLocation, useNavigate } from 'react-router-dom';
+import { toast, ToastContainer } from 'react-toastify';
 import auth from '../../../firebase.init';
 
 const Login = () => {
@@ -18,13 +19,14 @@ const Login = () => {
         error,
     ] = useSignInWithEmailAndPassword(auth);
     const [signInWithGoogle, user1] = useSignInWithGoogle(auth);
+    const [sendPasswordResetEmail, sending] = useSendPasswordResetEmail(auth);
 
     const navigate = useNavigate();
-    
+
     if (user) {
         navigate(from, { replace: true })
     }
-    if(user1){
+    if (user1) {
         navigate("/home")
     }
     const handleLogin = event => {
@@ -33,7 +35,16 @@ const Login = () => {
         const password = passwordRef.current.value;
         signInWithEmailAndPassword(email, password)
     }
-
+    const handleResetPassword = () => {
+        const email = emailRef.current.value;
+        if (email) {
+            sendPasswordResetEmail(email);
+            toast("Email Sent")
+        }
+        else {
+            toast("please enter your email address")
+        }
+    }
     return (
         <div className="w-50 mx-auto border p-5 mt-5">
             <h2>Please Login</h2>
@@ -51,8 +62,10 @@ const Login = () => {
                 </Button>
                 <br />
                 <p>Don't Have an Account?<Link to="/register"> Please Register</Link></p>
+                <p>Forgot Password? <button onClick={handleResetPassword}>Reset Password</button></p>
             </Form>
             <Button onClick={() => signInWithGoogle()}>Google Sign In</Button>
+            <ToastContainer></ToastContainer>
         </div>
     );
 };

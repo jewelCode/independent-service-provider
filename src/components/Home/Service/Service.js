@@ -15,12 +15,12 @@ const Service = (props) => {
         <Card className="h-100" style={{ width: '18rem' }}>
             <Card.Img variant="top" src={img}/>
             <Card.Body>
-                <Card.Title>Service Name: {name}</Card.Title>
+                <Card.Title> {name}</Card.Title>
                 <Card.Text>
                         {description}
                 </Card.Text>
                 <h4>Price: $ {price}</h4>
-                <Button onClick={()=>handleServiceDetail(id)} variant="danger">Book:{name}</Button>
+                <Button onClick={()=>handleServiceDetail(id)} variant="danger">Take Appointment</Button>
             </Card.Body>
             </Card>
         </div>
