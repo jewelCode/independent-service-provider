@@ -5,7 +5,6 @@ import Slider from '../Slider/Slider';
 const Home = () => {
     return (
         <div>
-            
             <Services></Services>
         </div>
     );
