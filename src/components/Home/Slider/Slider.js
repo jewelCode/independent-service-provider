@@ -1,5 +1,6 @@
 import React from 'react';
 import { Carousel } from 'react-bootstrap';
+import image1 from '../../../resources/error.jpg'
 
 const Slider = () => {
     return (
@@ -7,8 +8,8 @@ const Slider = () => {
             <Carousel>
                 <Carousel.Item>
                     <img
-                    className="d-block w-100"
-                    src="holder.js/800x400?text=First slide&bg=373940"
+                    className="d-block"
+                    src={image1}
                     alt="First slide"
                     />
                     <Carousel.Caption>
