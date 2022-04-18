@@ -1,7 +1,7 @@
 import React from 'react';
 import Main from '../../Shared/Main/Main';
 import Services from '../Services/Services';
-import Slider from '../Slider/Slider';
+
 
 const Home = () => {
     return (

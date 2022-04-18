@@ -11,8 +11,8 @@ const Service = (props) => {
         navigate(`/service/${id}`)
     }
     return (
-        <div className="col-md-4 g-4">
-            <Card className="h-100" style={{ width: '18rem' }}>
+        <div className="col-md-4 col-sm-12 g-4">
+            <Card className="h-100 col-6 mx-auto" style={{ width: '18rem' }}>
                 <Card.Img className="w-75 mx-auto" variant="top" src={img}/>
                 <Card.Body className="d-flex flex-column">
                     <Card.Title> {name}</Card.Title>
