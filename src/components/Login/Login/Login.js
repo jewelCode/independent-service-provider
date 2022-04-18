@@ -6,7 +6,7 @@ import { toast, ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import auth from '../../../firebase.init';
 import google from '../../../resources/google.png'
-import Loading from '../../Shared/Loading/Loading';
+
 
 
 const Login = () => {
@@ -19,7 +19,6 @@ const Login = () => {
     const [
         signInWithEmailAndPassword,
         user,
-        loading,
         error,
     ] = useSignInWithEmailAndPassword(auth);
     const [signInWithGoogle, user1] = useSignInWithGoogle(auth);
@@ -30,7 +29,7 @@ const Login = () => {
     if (user) {
         navigate(from, { replace: true })
     }
-  
+
 
     if (error) {
         errorElement = <p className="text-danger">Error: {error?.message}</p>
@@ -60,7 +59,7 @@ const Login = () => {
             <Form onSubmit={handleLogin}>
                 <Form.Group className="mb-3" controlId="formBasicEmail">
                     <Form.Label className="text-light">Email address: </Form.Label>
-                    <Form.Control ref={emailRef} type="email" placeholder="Enter email" required/>
+                    <Form.Control ref={emailRef} type="email" placeholder="Enter email" required />
                 </Form.Group>
                 <Form.Group className="mb-3" controlId="formBasicPassword">
                     <Form.Label className="text-light">Password: </Form.Label>
