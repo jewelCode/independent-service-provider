@@ -1,9 +1,12 @@
 import React from 'react';
 
+
 const CheckOut = () => {
+   
     return (
         <div>
-            <h3>This is Checkout</h3>
+            <h3>Checkout</h3>
+            
         </div>
     );
 };

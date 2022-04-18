@@ -3,8 +3,11 @@ import { Button, Form } from 'react-bootstrap';
 import { useSendPasswordResetEmail, useSignInWithEmailAndPassword, useSignInWithGoogle } from 'react-firebase-hooks/auth';
 import { Link, useLocation, useNavigate } from 'react-router-dom';
 import { toast, ToastContainer } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 import auth from '../../../firebase.init';
 import google from '../../../resources/google.png'
+import Loading from '../../Shared/Loading/Loading';
+
 
 const Login = () => {
     const emailRef = useRef('');
@@ -27,6 +30,7 @@ const Login = () => {
     if (user) {
         navigate(from, { replace: true })
     }
+  
 
     if (error) {
         errorElement = <p className="text-danger">Error: {error?.message}</p>
@@ -51,7 +55,7 @@ const Login = () => {
         }
     }
     return (
-        <div className="w-50 mx-auto border p-5 mt-5" style={{backgroundColor: '#0D63A5'}}>
+        <div className="w-50 mx-auto border p-5 mt-5" style={{ backgroundColor: '#0D63A5' }}>
             <h2 className="text-light">Please Login</h2>
             <Form onSubmit={handleLogin}>
                 <Form.Group className="mb-3" controlId="formBasicEmail">
