@@ -6,9 +6,9 @@ const Main = () => {
         <div className="container">
             <div className="row d-flex align-items-center">
                 <div className="col-md-6">
-                    <h1 className="display-1">Shan's Lawyer Service</h1>
-                    <p className="display-6">Efficient Lawyer in your Hand</p>
-                    <button className="btn btn-danger">About Me</button>
+                    <h1 style={{color: '#083358'}} className="display-1 text-uppercase font-weight-bold">Shan's Lawyer Service</h1>
+                    <p style={{color: '#0D63A5'}}  className="display-6 font-weight-bold text-uppercase">Efficient Lawyer in your Hand</p>
+                    <button className="btn btn-warning">About Me</button>
                 </div>
                 <div className="col-md-6">
                     <img className="img-fluid" src={lawyer} alt="" />

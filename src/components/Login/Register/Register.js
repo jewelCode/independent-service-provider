@@ -22,27 +22,27 @@ const handleRegister = event =>{
         createUserWithEmailAndPassword(email, password)
 }
     return (
-        <div className="w-50 mx-auto border p-5 mt-5">
-            <h2>Please Register</h2>
+        <div className="w-50 mx-auto border p-5 mt-5" style={{backgroundColor: '#0D63A5'}}>
+            <h2 className="text-light">Please Register</h2>
             <Form onSubmit={handleRegister}>
                 <Form.Group className="mb-3" controlId="formBasicEmail">
-                    <Form.Label>Your Name:</Form.Label>
+                    <Form.Label className="text-light">Your Name:</Form.Label>
                     <Form.Control ref={nameRef} type="text" placeholder="Enter Your Name" />
                 </Form.Group>
                 <Form.Group className="mb-3" controlId="formBasicEmail">
-                    <Form.Label>Email: </Form.Label>
+                    <Form.Label className="text-light">Email: </Form.Label>
                     <Form.Control ref={emailRef} type="email" placeholder="Enter email" />
                 </Form.Group>
 
                 <Form.Group className="mb-3" controlId="formBasicPassword">
-                    <Form.Label>Password: </Form.Label>
+                    <Form.Label className="text-light">Password: </Form.Label>
                     <Form.Control ref={passwordRef} type="password" placeholder="Password" />
                 </Form.Group>
-                <Button variant="danger" type="submit">
+                <Button variant="warning" type="submit">
                     Register
                 </Button>
                 <br />
-                <p>Already Have an Account?<Link to="/login"> Please Login</Link></p>
+                <p className="text-light">Already Have an Account? <Link to="/login" className="text-light">Please Login</Link></p>
             </Form>
         </div>
     );

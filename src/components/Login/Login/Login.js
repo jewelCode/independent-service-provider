@@ -4,6 +4,7 @@ import { useSendPasswordResetEmail, useSignInWithEmailAndPassword, useSignInWith
 import { Link, useLocation, useNavigate } from 'react-router-dom';
 import { toast, ToastContainer } from 'react-toastify';
 import auth from '../../../firebase.init';
+import google from '../../../resources/google.png'
 
 const Login = () => {
     const emailRef = useRef('');
@@ -50,26 +51,28 @@ const Login = () => {
         }
     }
     return (
-        <div className="w-50 mx-auto border p-5 mt-5">
-            <h2>Please Login</h2>
+        <div className="w-50 mx-auto border p-5 mt-5" style={{backgroundColor: '#0D63A5'}}>
+            <h2 className="text-light">Please Login</h2>
             <Form onSubmit={handleLogin}>
                 <Form.Group className="mb-3" controlId="formBasicEmail">
-                    <Form.Label>Email address: </Form.Label>
+                    <Form.Label className="text-light">Email address: </Form.Label>
                     <Form.Control ref={emailRef} type="email" placeholder="Enter email" />
                 </Form.Group>
                 <Form.Group className="mb-3" controlId="formBasicPassword">
-                    <Form.Label>Password: </Form.Label>
+                    <Form.Label className="text-light">Password: </Form.Label>
                     <Form.Control ref={passwordRef} type="password" placeholder="Password" />
                 </Form.Group>
-                <Button variant="danger" type="submit">
+                <Button variant="warning" type="submit">
                     Login
                 </Button>
                 <br />
-                <p>Don't Have an Account?<Link to="/register"> Please Register</Link></p>
-                <p>Forgot Password? <button onClick={handleResetPassword}>Reset Password</button></p>
+                <p className="text-light">Don't Have an Account? <Link to="/register" className="text-light">Please Register</Link></p>
+                <p className="text-light">Forgot Password? <button className="btn btn-warning" onClick={handleResetPassword}>Reset Password</button></p>
             </Form>
             {errorElement}
-            <Button onClick={() => signInWithGoogle()}>Google Sign In</Button>
+            <div className="text-center mt-5">
+                <Button variant="outline-warning" onClick={() => signInWithGoogle()}><img src={google}></img>Sign In With Google</Button>
+            </div>
             <ToastContainer></ToastContainer>
         </div>
     );

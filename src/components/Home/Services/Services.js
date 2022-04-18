@@ -10,7 +10,7 @@ const Services = () => {
     }, [])
     return (
         <div className="container">
-            <h2 className="text-center display-6">Services I have Provide</h2>
+            <h2 style={{color: '#083358'}} className="text-center display-6 text-uppercase font-weight-bold">Services I have Provide</h2>
             <div className="row">
 
                 {

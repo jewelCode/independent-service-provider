@@ -1,21 +1,22 @@
 import React from 'react';
 
-const style = {
+const footer = {
   left: "0",
   bottom: "0",
   width: "100%",
   height: "300px",
   color: "white",
   textAlign: "center",
+  backgroundColor: "#001F3F",
 };
 const Footer = () => {
     return (
-        <div style={style} className="p-5 mt-5 bg-danger">
+        <div style={footer} className="p-5 mt-5">
             <div className="row">
                   <div className="col-md-4 col-sm-12">
-                      <h3>Location</h3>
+                      <h3>Chamber</h3>
                       <p>71 Court Hill</p>
-                      <p>Court Road</p>
+                      <p>Court Road, Behind The Bangladesh Bank</p>
                       <p>Kotwali, Chittagong</p>
                   </div>
                   <div className="col-md-4 col-sm-12">

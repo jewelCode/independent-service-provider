@@ -1,4 +1,4 @@
-import { Route, Routes } from 'react-router-dom';
+import { Route, Routes, useLocation } from 'react-router-dom';
 import './App.css';
 import About from './components/About/About';
 import Blog from './components/Blog/Blog';
@@ -10,10 +10,10 @@ import RequireAuth from './components/Login/RequireAuth/RequireAuth';
 import ServiceDetails from './components/ServiceDetails/ServiceDetails';
 import Footer from './components/Shared/Footer/Footer';
 import Header from './components/Shared/Header/Header';
-
 import NotFound from './components/Shared/NotFound/NotFound';
 
 function App() {
+  const location = useLocation()
   return (
     <div>
       <Header></Header>
@@ -31,8 +31,10 @@ function App() {
           </RequireAuth>}>
         </Route>
         <Route path="*" element={<NotFound></NotFound>}></Route>
+        
       </Routes>
-      <Footer></Footer>
+      {location.pathname !== '/login' &&  <Footer /> }
+   
     </div>
   );
 }
