@@ -2,43 +2,43 @@
     {
         "id": 1,
         "name": "Women Abuse Case",
-        "price": "300",
-        "description": "Lorem ipsum dolor sit amet, consectetu radipisi cing elitBeatae autem aperiam nequ quaera molestias voluptatibus harum ametipsa.",
+        "price": "200",
+        "description": "I am working with women abuse case related issues",
         "img": "https://i.ibb.co/F8BVwYS/law-justice-concept-with-flat-icons-justice-scales-judge-gavel-lady-justice-law-books-isolated-vecto.jpg"
     },
     {
         "id": 2,
         "name": "Criminal cases, bail, acquittal and others",
-        "price": "100",
-        "description": "Lorem ipsum dolor sit amet, consectetu radipisi cing elitBeatae autem aperiam nequ quaera molestias voluptatibus harum ametipsa.",
+        "price": "300",
+        "description": "",
         "img": "https://i.ibb.co/zmj91vf/2-2.jpg"
     },
     {
         "id": 3,
         "name": "Filing of civil (land related) cases, possession, rescue, declaration of rights, prohibition and others",
-        "price": "150",
-        "description": "Lorem ipsum dolor sit amet, consectetu radipisi cing elitBeatae autem aperiam nequ quaera molestias voluptatibus harum ametipsa.",
+        "price": "550",
+        "description": "I can assist you to solve all kinds of land related problem",
         "img": "https://i.ibb.co/z2QzT5W/5911.jpg"
     },
     {
         "id": 4,
         "name": "Court marriage, divorce, child guardianship, dowry and maintenance",
-        "price": "180",
-        "description": "Lorem ipsum dolor sit amet, consectetu radipisi cing elitBeatae autem aperiam nequ quaera molestias voluptatibus harum ametipsa.",
+        "price": "680",
+        "description": "I can help to Court Marriage Related issues, divorce letter and child relationships with proper documentation",
         "img": "https://i.ibb.co/1mssyRt/4.jpg"
     },
     {
         "id": 5,
         "name": "Any Kind of Legal Notice",
-        "price": "100",
-        "description": "Lorem ipsum dolor sit amet, consectetu radipisi cing elitBeatae autem aperiam nequ quaera molestias voluptatibus harum ametipsa.",
+        "price": "236",
+        "description": "I can help you to provide all kinds of legal notice",
         "img": "https://i.ibb.co/7CN65bT/5.jpg"
     },
     {
         "id": 6,
         "name": "Check bounce, money laundering Case",
-        "price": "300",
-        "description": "Lorem ipsum dolor sit amet, consectetu radipisi cing elitBeatae autem aperiam nequ quaera molestias voluptatibus harum ametipsa",
+        "price": "632",
+        "description": "All kinds of cheque Related case handled with care",
         "img": "https://i.ibb.co/N7hWVJh/6.jpg"
     }
 ]

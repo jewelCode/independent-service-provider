@@ -12,16 +12,16 @@ const Service = (props) => {
     }
     return (
         <div className="col-md-4 g-4">
-        <Card className="h-100" style={{ width: '18rem' }}>
-            <Card.Img variant="top" src={img}/>
-            <Card.Body>
-                <Card.Title> {name}</Card.Title>
-                <Card.Text>
-                        {description}
-                </Card.Text>
-                <h4>Price: $ {price}</h4>
-                <Button onClick={()=>handleServiceDetail(id)} variant="danger">Take Appointment</Button>
-            </Card.Body>
+            <Card className="h-100" style={{ width: '18rem' }}>
+                <Card.Img className="w-75 mx-auto" variant="top" src={img}/>
+                <Card.Body className="d-flex flex-column">
+                    <Card.Title> {name}</Card.Title>
+                    <Card.Text>
+                            {description}
+                    </Card.Text>
+                    <h6>Consultancy Fee: $ {price}</h6>
+                    <Button className="mt-auto" onClick={()=>handleServiceDetail(id)} variant="danger">Take Appointment</Button>
+                </Card.Body>
             </Card>
         </div>
     );
