@@ -13,25 +13,25 @@ const Register = () => {
         user,
         loading,
         error,
-      ] = useCreateUserWithEmailAndPassword(auth, {sendEmailVerification: true});
+    ] = useCreateUserWithEmailAndPassword(auth, { sendEmailVerification: true });
 
-const handleRegister = event =>{
+    const handleRegister = event => {
         event.preventDefault();
         const email = emailRef.current.value;
         const password = passwordRef.current.value;
         createUserWithEmailAndPassword(email, password)
-}
+    }
     return (
-        <div className="w-50 mx-auto border p-5 mt-5" style={{backgroundColor: '#0D63A5'}}>
+        <div className="w-50 mx-auto border p-5 mt-5" style={{ backgroundColor: '#0D63A5' }}>
             <h2 className="text-light">Please Register</h2>
             <Form onSubmit={handleRegister}>
                 <Form.Group className="mb-3" controlId="formBasicEmail">
                     <Form.Label className="text-light">Your Name:</Form.Label>
-                    <Form.Control ref={nameRef} type="text" placeholder="Enter Your Name" />
+                    <Form.Control ref={nameRef} type="text" placeholder="Enter Your Name" required />
                 </Form.Group>
                 <Form.Group className="mb-3" controlId="formBasicEmail">
                     <Form.Label className="text-light">Email: </Form.Label>
-                    <Form.Control ref={emailRef} type="email" placeholder="Enter email" />
+                    <Form.Control ref={emailRef} type="email" placeholder="Enter email" required />
                 </Form.Group>
 
                 <Form.Group className="mb-3" controlId="formBasicPassword">

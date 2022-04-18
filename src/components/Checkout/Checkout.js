@@ -28,7 +28,7 @@ const CheckOut = () => {
                 </Form.Group>
                 <Form.Group className="mb-3">
                     <Form.Label>CCV</Form.Label>
-                    <Form.Control type="number" placeholder="Expire Date" />
+                    <Form.Control type="number" placeholder="CCV Number" />
                 </Form.Group>
                 <Form.Group className="mb-3" controlId="formBasicCheckbox">
                     <Form.Check type="checkbox" label="Check me out" />
