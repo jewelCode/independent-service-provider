@@ -11,7 +11,7 @@ const Service = (props) => {
         navigate(`/service/${id}`)
     }
     return (
-        <div className="col-lg-4 g-4">
+        <div className="col-md-4 g-4">
         <Card className="h-100" style={{ width: '18rem' }}>
             <Card.Img variant="top" src={img}/>
             <Card.Body>

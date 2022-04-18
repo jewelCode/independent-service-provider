@@ -1,19 +1,20 @@
 import React from 'react';
+import about from '../../resources/about.jpg'
 
 const About = () => {
     return (
         <div className="container mt-5">
-            <div className="row">
+            <div className="row d-flex align-items-center">
                 <div className="col-md-6">
-                    <img src="" alt="" />
+                    <img className="img-fluid w-75 mx-auto" src={about} alt="" />
                 </div>
                 <div className="col-md-6">
                     <h2>About Me</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A delectus pariatur in, quas quisquam nobis sequi, similique assumenda earum harum, inventore provident illo consequatur explicabo esse quis. Fugiat ab sit cupiditate labore? Illo fuga doloremque sit culpa. Itaque illo similique unde, optio ea beatae doloribus quo nulla corrupti eius fuga laboriosam ullam accusantium eveniet. Placeat accusantium aspernatur sequi corrupti sint provident expedita nisi alias? Repudiandae, eius deleniti esse cum voluptatibus adipisci et repellendus. Itaque temporibus nihil asperiores minima nesciunt explicabo excepturi alias voluptas! Dolorum officiis fugiat, voluptatem eum maxime dolore, obcaecati eos, aliquam consectetur vero porro perspiciatis nulla quae laborum!</p>
+                    <h4>Name: Jewel Barua</h4>
+                    <p>Hello I am Jewel Barua. From my childhood I am Technology Lover. I am always try to learn new innovative things. I am also learning web development from Programming Hero. </p>
 
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A delectus pariatur in, quas quisquam nobis sequi, similique assumenda earum harum, inventore provident illo consequatur explicabo esse quis. Fugiat ab sit cupiditate labore? Illo fuga doloremque sit culpa. Itaque illo similique unde, optio ea beatae doloribus quo nulla corrupti eius fuga laboriosam ullam accusantium eveniet. Placeat accusantium aspernatur sequi corrupti sint provident expedita nisi alias? Repudiandae, eius deleniti esse cum voluptatibus adipisci et repellendus. Itaque temporibus nihil asperiores minima nesciunt explicabo excepturi alias voluptas! Dolorum officiis fugiat, voluptatem eum maxime dolore, obcaecati eos, aliquam consectetur vero porro perspiciatis nulla quae laborum!</p>
+                    <p>I want to develop my career as a full stack web developer. Also learning modern web technology. I also cope up with HTML, CSS, bootstrap, Javascript, Debugging, React. I have ability to adapt new and modern web technologies.</p>
 
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A delectus pariatur in, quas quisquam nobis sequi, similique assumenda earum harum, inventore provident illo consequatur explicabo esse quis. Fugiat ab sit cupiditate labore? Illo fuga doloremque sit culpa. Itaque illo similique unde, optio ea beatae doloribus quo nulla corrupti eius fuga laboriosam ullam accusantium eveniet. Placeat accusantium aspernatur sequi corrupti sint provident expedita nisi alias? Repudiandae, eius deleniti esse cum voluptatibus adipisci et repellendus. Itaque temporibus nihil asperiores minima nesciunt explicabo excepturi alias voluptas! Dolorum officiis fugiat, voluptatem eum maxime dolore, obcaecati eos, aliquam consectetur vero porro perspiciatis nulla quae laborum!</p>
                 </div>
             </div>
         </div>
