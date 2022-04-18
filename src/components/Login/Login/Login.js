@@ -9,8 +9,8 @@ const Login = () => {
     const emailRef = useRef('');
     const passwordRef = useRef('');
     const location = useLocation();
-
     let from = location.state?.from?.pathname || "/";
+    let errorElement;
 
     const [
         signInWithEmailAndPassword,
@@ -25,6 +25,10 @@ const Login = () => {
 
     if (user) {
         navigate(from, { replace: true })
+    }
+
+    if (error) {
+        errorElement = <p className="text-danger">Error: {error?.message}</p>
     }
     if (user1) {
         navigate("/home")
@@ -64,6 +68,7 @@ const Login = () => {
                 <p>Don't Have an Account?<Link to="/register"> Please Register</Link></p>
                 <p>Forgot Password? <button onClick={handleResetPassword}>Reset Password</button></p>
             </Form>
+            {errorElement}
             <Button onClick={() => signInWithGoogle()}>Google Sign In</Button>
             <ToastContainer></ToastContainer>
         </div>
