@@ -16,7 +16,7 @@ const Footer = () => {
                   <div className="col-md-4 col-sm-12">
                       <h3>Chamber</h3>
                       <p>71 Court Hill</p>
-                      <p>Court Road, Behind The Bangladesh Bank</p>
+                      <p>Court Road, Beside Bangladesh Bank</p>
                       <p>Kotwali, Chittagong</p>
                   </div>
                   <div className="col-md-4 col-sm-12">
